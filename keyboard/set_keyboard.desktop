@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Exec=/usr/local/bin/set_keyboard.sh
+Hidden=false
+NoDisplay=false
+Name=Set Keyboard Layout
+Comment=Set custom keyboard layout at startup
+

@@ -1,0 +1,96 @@
+xkb_symbols "caps_layout" {
+    // Задаём CapsLock как модификатор уровня 3
+    key <CAPS> { [ ISO_Level3_Shift ] };
+
+    // Определяем замену для клавиш при нажатии CapsLock (Level3)
+    key <AD02> { // w -> Up
+        type[group1] = "THREE_LEVEL",
+        symbols[Group1] = [ NoSymbol, NoSymbol, Up ]
+    };
+    key <AC01> { // a -> Left
+        type[group1] = "THREE_LEVEL",
+        symbols[Group1] = [ NoSymbol, NoSymbol, Left ]
+    };
+    key <AC02> { // s -> down
+        type[group1] = "THREE_LEVEL",
+        symbols[Group1] = [ NoSymbol, NoSymbol, Down ]
+    };
+    key <AC03> { // d -> right
+        type[group1] = "THREE_LEVEL",
+        symbols[Group1] = [ NoSymbol, NoSymbol, Right ]
+    };
+    key <AC07> { // j -> (
+        type[group1] = "THREE_LEVEL",
+        symbols[Group1] = [ NoSymbol, NoSymbol, parenleft ]
+    };
+    key <AC08> { // k -> )
+        type[group1] = "THREE_LEVEL",
+        symbols[Group1] = [ NoSymbol, NoSymbol, parenright ]
+    };
+    key <AD07> { // u -> {
+        type[group1] = "THREE_LEVEL",
+        symbols[Group1] = [ NoSymbol, NoSymbol, braceleft ]
+    };
+    key <AD08> { // i -> }
+        type[group1] = "THREE_LEVEL",
+        symbols[Group1] = [ NoSymbol, NoSymbol, braceright ]
+    };
+    key <AB07> { // m -> [
+        type[group1] = "THREE_LEVEL",
+        symbols[Group1] = [ NoSymbol, NoSymbol, bracketleft ]
+    }; 
+    key <AB08> { // , -> ]
+        type[group1] = "THREE_LEVEL",
+        symbols[Group1] = [ NoSymbol, NoSymbol, bracketright ]
+    };
+    key <AB09> { // . -> _
+        type[group1] = "THREE_LEVEL",
+        symbols[Group1] = [ NoSymbol, NoSymbol, underscore ]
+    };
+    key <AD09> { // o -> end
+        type[group1] = "THREE_LEVEL",
+        symbols[Group1] = [ NoSymbol, NoSymbol, End ] 
+    };
+    key <AD10> { // p -> home
+        type[group1] = "THREE_LEVEL",
+        symbols[Group1] = [ NoSymbol, NoSymbol, Home ]
+    };
+    key <AC09> { // l -> backspace
+        type[group1] = "THREE_LEVEL",
+        symbols[Group1] = [ NoSymbol, NoSymbol, Backspace ]
+    };
+    key <AD03> { // e -> `
+        type[group1] = "THREE_LEVEL",
+        symbols[Group1] = [ NoSymbol, NoSymbol, grave ]
+    };
+    key <AD04> { // r -> =
+        type[group1] = "THREE_LEVEL",
+        symbols[Group1] = [ NoSymbol, NoSymbol, equal ]
+    };
+    key <AC04> { // f -> -
+        type[group1] = "THREE_LEVEL",
+        symbols[Group1] = [ NoSymbol, NoSymbol, minus ]
+    };
+    key <AB03> { // c -> +
+        type[group1] = "THREE_LEVEL",
+        symbols[Group1] = [ NoSymbol, NoSymbol, plus ]
+    };
+    key <AB04> { // v -> ~
+        type[group1] = "THREE_LEVEL",
+        symbols[Group1] = [ NoSymbol, NoSymbol, asciitilde ]
+    };
+//    key <FK13> { [ n, N, n, N ] };
+    key <AD06> { // y - CapsLock
+        type[group1] = "THREE_LEVEL",
+        symbols[Group1] = [ NoSymbol, NoSymbol, CapsLock ]
+    };
+    key <AB01> { // z -> F13
+        type[group1] = "THREE_LEVEL",
+        symbols[Group1] = [ NoSymbol, NoSymbol, F19 ]
+    };
+    key <AB02> { // x -> F14
+        type[group1] = "THREE_LEVEL",
+        symbols[Group1] = [ NoSymbol, NoSymbol, F21 ]
+    };
+    include "us(basic)"
+};

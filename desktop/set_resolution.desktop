@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Exec=/usr/local/bin/set_resolution.sh
+Hidden=false
+NoDisplay=false
+Name=Set 3440x1440 resolution
+Comment=Set custom resolution at startup

@@ -1,0 +1,11 @@
+[Unit]
+Description=Set custom keyboard layout for X session
+After=display-manager.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/set_keyboard.sh
+User=
+
+[Install]
+WantedBy=graphical.target
