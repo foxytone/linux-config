@@ -3,3 +3,4 @@
 3. chmod +x set_resolution.sh
 4. cp set_resolution.sh /usr/local/bin
 5. cp set_resolution.desktop ~./config/autostart/
+6. In win, powershell as admin -> set-vmvideo -vmname <NameOfVM> -horizontalresolution:3440  -verticalresolution:1440 -resolutiontype single
