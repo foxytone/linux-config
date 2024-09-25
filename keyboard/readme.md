@@ -6,5 +6,9 @@
 6. systemctl enable keyboard-layout.service
 
 or:
+1-3. the same
+4. copy set_keyborad.desktop to ~./config/autostart/ 
 
-2. copy set_keyborad.desktop to ~./config/autostart/ 
+OR:
+
+sudo sh setup.sh
